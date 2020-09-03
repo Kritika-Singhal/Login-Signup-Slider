@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Sign from './component/signinup';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  /*
+  constructor() {
+    super();
+    this.state = {
+        rightpane: false,
+    }
+  }
+
+  handleSignupButton = () => this.setState({
+    rightpane: true,
+  });
+
+  handleSigninButton = () => this.setState({
+    rightpane: false,
+  });
+*/
+  render() {
+   /* const { handleSignupButton, handleSigninButton } = this;
+    const { rightpane } = this.state;*/
+    return (
+        <div className="App">
+                <Sign />
+            </div>
+    );
+  }
 }
 
 export default App;

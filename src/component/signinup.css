@@ -1,0 +1,147 @@
+.container {
+    margin-top: 100px;
+    overflow: hidden;
+    width: 768px;
+    max-width:100%;
+    align-items: center;
+    background-color: #ffffff;
+    transition: all transform 0.6s ease-in-out;
+}
+.form{
+    width: 50%;
+    position: relative;
+    align-items: center;
+}
+.shift{
+    left: 50%;
+    width: 50%;
+    position: relative;
+    align-items: center;
+}
+.signup {
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out;
+    z-index: 2;
+
+}
+.signin {
+    align-content: center;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out;
+    animation: hide 0.6s;
+    opacity: 0;
+    z-index: 1;
+}
+p {
+    color: black;
+    font-size: 20px;
+}
+h1 {
+    color: black;
+}
+.button {
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 10px 45px;
+}
+.btn-style {
+    width:200;
+    align-self: center;
+}
+
+.form-input {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card {
+    height: 500px;
+}
+
+.btn-social-icon {
+    margin: 10px;
+}
+.in-shift {
+    align-content: center;
+    width: 100%;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(0);
+    padding: 10px;
+    z-index: 2;
+}
+.up-shift {
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.6s ease-in-out;
+    animation: hide 0.6s;
+    z-index: 1;
+}
+.up-right-inactive{
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+}
+ 
+.up-right-active {
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+    z-index: 5;
+    opacity: 1;
+    animation: show 0.6s ;
+}
+
+.in-right-active{
+    transition: transform 0.6s ease-in-out;
+    transform: translateX(-100%);
+    animation: show 0.6s;
+    z-index: 5;
+    opacity: 1;
+}
+
+.in-right-inactive {
+    transform: translateX(-100%);
+    transition: transform 0.6s ease-in-out;
+}
+
+@keyframes show {
+    0%,
+    49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+@keyframes hide {
+    0%,
+    49.99% {
+        opacity: 1;
+        z-index: 5;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+        z-index: 1;
+    }
+}
+
+
+
+
+
+
+
