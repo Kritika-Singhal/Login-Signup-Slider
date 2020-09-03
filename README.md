@@ -1,3 +1,3 @@
 # Login-Signup-Slider
 
-Login/Signup page build using ReactJs.
+A sliding Login/Signup page build using ReactJs.
