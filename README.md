@@ -4,4 +4,4 @@ A sliding Login/Signup page build using ReactJs.
 
 Demo 
 
-![](public/LoginSignup.gif)
+![](public/loginSignup.gif)
